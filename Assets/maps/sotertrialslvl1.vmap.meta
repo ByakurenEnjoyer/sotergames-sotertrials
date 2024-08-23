@@ -1,0 +1,22 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "The Soter Trials - Map 1",
+      "Type": "map",
+      "Org": "sotergames",
+      "Ident": "sotertrialslvl1",
+      "Schema": 0,
+      "IncludeSourceFiles": true,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "eurorp.door01_right_01#12553"
+      ],
+      "IsWhitelistDisabled": false,
+      "Metadata": {
+        "SingleAssetSource": "maps/sotertrialslvl1.vmap"
+      }
+    }
+  }
+}

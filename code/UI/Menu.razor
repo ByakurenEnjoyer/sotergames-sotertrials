@@ -1,0 +1,31 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="title">
+		<h1>@GameTitle</h1>
+		<h1>@GameTitle2</h1>
+		</div>
+	<div class="menuitems" onclick="@Play">Play</div>
+	<div class="menuitems">Credits</div>
+	<div class="menuitems" onclick="@Quit">Quit</div>
+</root>
+
+@code
+{
+
+	[Property, TextArea] public string GameTitle { get; set; } = "Hello World!";
+	[Property, TextArea] public string GameTitle2 { get; set; } = "Hello World!";
+
+	protected override int BuildHash() => System.HashCode.Combine( GameTitle, GameTitle2 );
+
+	void Play()
+	{
+		Scene.LoadFromFile("scenes/minimal.scene");
+	}
+	void Quit()
+	{
+		Game.Close();
+	}
+}

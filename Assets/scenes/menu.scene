@@ -1,0 +1,207 @@
+{
+  "__guid": "6bb9065f-bd9f-4a00-a1c2-d2624b386299",
+  "GameObjects": [
+    {
+      "__guid": "c6f672a9-b0dd-4763-8e84-0ae3d6f2e597",
+      "Flags": 0,
+      "Name": "Main Camera",
+      "Position": "-3844.008,-1338.942,1615.299",
+      "Rotation": "0,0.1305262,0,0.9914449",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "ae36d9ff-acc2-4d67-a7f5-4527c06f77cd",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "d0464ed8-7f4d-4139-8a4d-74b72daee89f",
+      "Flags": 0,
+      "Name": "Directional Light",
+      "Position": "0,0,200",
+      "Rotation": "-0.2459842,0.5938582,0.2931525,0.7077327",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "5b46b61f-42a5-4ae5-bddb-7c95175adfa0",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "1,1,1,1",
+          "Shadows": true,
+          "SkyColor": "0,0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "c40469da-eb48-4540-bd02-a125d4a19433",
+      "Flags": 0,
+      "Name": "Screen",
+      "Position": "-129.6141,-2.09243,135.5951",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "d8e25c9b-54bd-4316-a916-bb3bbdd4e632",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        },
+        {
+          "__type": "Menu",
+          "__guid": "3b284a64-4087-41c7-b548-52e7b795e970",
+          "GameTitle": "The Soter",
+          "GameTitle2": "Trials"
+        }
+      ]
+    },
+    {
+      "__guid": "70743ce0-6193-41c0-b460-08eee94f401f",
+      "Flags": 0,
+      "Name": "Cube",
+      "Position": "27.35832,-28.42595,63.80617",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "f8b6621c-744b-46b6-9d41-91f11bae2aa1",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "2d7a8a32-56fe-422c-a981-d7e097fac1aa",
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Position": "128.9649,11.6537,99.73854",
+      "Tags": "skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "9a678578-1ce5-4269-bd5e-657862e8885b",
+          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "e91eb7b3-5a38-4f46-836d-b3915ce19a0c",
+      "Flags": 0,
+      "Name": "Menu Music",
+      "Position": "-3848.744,-1352.856,1615.442",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SoundBoxComponent",
+          "__guid": "ad76c596-49e5-4a8b-9e59-d02c40e481d3",
+          "DistanceAttenuation": false,
+          "DistanceAttenuationOverride": true,
+          "Force2d": false,
+          "MaxRepeatTime": 2.0000002,
+          "MinRepeatTime": 1,
+          "Occlusion": false,
+          "OcclusionOverride": false,
+          "OcclusionRadius": 32,
+          "Pitch": 1,
+          "PlayOnStart": true,
+          "ReflectionOverride": false,
+          "Reflections": false,
+          "Repeat": true,
+          "Scale": "500,500,500",
+          "SoundEvent": "sounds/the_s\u0026box_song.sound",
+          "SoundOverride": true,
+          "StopOnNew": false,
+          "TargetMixer": {
+            "Name": "music",
+            "Id": "1ac661e6-b505-4a0a-be6a-637140140673"
+          },
+          "Volume": 1
+        }
+      ]
+    },
+    {
+      "__guid": "bca86a29-a5b0-41fc-8f15-d5637f7f341c",
+      "Flags": 0,
+      "Name": "Screen",
+      "Position": "-114.2176,266.3329,194.3476",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "d9567ac2-a29a-49e6-805f-d52a8cb9cfa0",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        }
+      ]
+    },
+    {
+      "__guid": "7f2a4bd1-da04-45c2-8551-6b1eaa0dd9b7",
+      "Flags": 0,
+      "Name": "Object",
+      "Position": "-374.508,22.61207,143.4825",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "6f22306c-6cc2-4931-87f7-e67a5e32ae3a",
+          "__version": 1,
+          "EnableCollision": true,
+          "MapName": "maps/sotertrialslvl1.vmap",
+          "NoOrigin": false,
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "menu",
+  "Description": "",
+  "ResourceVersion": 1,
+  "__references": [
+    "mungus.the_sbox_song"
+  ],
+  "__version": 1
+}
