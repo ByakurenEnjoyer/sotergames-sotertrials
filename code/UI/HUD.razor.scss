@@ -1,0 +1,19 @@
+HUD
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #44444400;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	border-radius: 20px;
+
+	.crosshair
+	{
+		color: #fff;
+		font-family: DSEG7 Modern-Italic;
+	}
+}

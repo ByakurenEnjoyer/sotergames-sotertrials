@@ -283,6 +283,7 @@
       "Name": "Guy",
       "Position": "42.02312,-325.2114,0.09375",
       "Rotation": "0,0,0.8657407,0.5004929",
+      "Tags": "player,trigger",
       "NetworkMode": 1,
       "Components": [
         {
@@ -417,6 +418,15 @@
             "go": "ea123054-088b-4251-9b04-e6c49fa9004a",
             "component_type": "SkinnedModelRenderer"
           }
+        },
+        {
+          "__type": "Sandbox.CapsuleCollider",
+          "__guid": "112a0bd2-efd2-4ee3-9017-13394f71368f",
+          "End": "0,0,60",
+          "IsTrigger": false,
+          "Radius": 10,
+          "Start": "0,0,0",
+          "Static": false
         }
       ],
       "Children": [
@@ -1418,7 +1428,8 @@
           "NoOrigin": false,
           "UseMapFromLaunch": true
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "dc761c92-3efc-449e-b673-77a06b79bf0b",
@@ -1518,6 +1529,100 @@
           "Opacity": 1,
           "Scale": 1,
           "ZIndex": 100
+        },
+        {
+          "__type": "HUD",
+          "__guid": "ee1c526d-bd99-4911-adbe-3679e470d71a",
+          "MyStringValue": "Hello World!"
+        }
+      ]
+    },
+    {
+      "__guid": "83880704-70c9-4b4a-b4a3-89fd51ab03a3",
+      "Flags": 0,
+      "Name": "TTD",
+      "Position": "2359.743,-1114.257,-550.9707",
+      "Scale": "161.1317,100.1236,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "c069dd6e-cbf2-462b-abd5-a842fac0feb4",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,0"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "00906d68-8de2-44b3-8341-2d97baa4b574",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "161.132,100.124,50",
+          "Static": false
+        },
+        {
+          "__type": "TTD",
+          "__guid": "bd0fb905-1c3d-4590-8c17-cbd2afc8f06b",
+          "SpawnPoints": [
+            {
+              "_type": "gameobject",
+              "go": "70bf30e2-71ac-44e6-a0b3-dca9b6f81599"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "70bf30e2-71ac-44e6-a0b3-dca9b6f81599",
+      "Flags": 0,
+      "Name": "Start",
+      "Position": "334.9089,-0.9042206,33.96172",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "6c6948f2-a958-4764-9469-bf34ce3e4a77",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "b2e0f985-3f68-4dbd-980d-7fdd80d59680",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "36787e6f-e10b-443d-872f-76f922af7d5c",
+      "Flags": 0,
+      "Name": "Finish",
+      "Position": "4282.102,-2664.746,911.9537",
+      "Scale": "1,1,0.07669869",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "35610ac1-3346-4368-8ed9-7ce8df2060b4",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "8793585e-a0ef-4d6b-9452-6d0e26dadd90",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "1,1,0.077",
+          "Static": true
         }
       ]
     }
