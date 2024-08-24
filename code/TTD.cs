@@ -25,6 +25,5 @@ public sealed class TTD : Component, Component.ITriggerListener, Component.IColl
 
 	public void OnTriggerExit( Collider other )
     {
-       Log.Info(other);
 	}
 }

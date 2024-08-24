@@ -5,7 +5,7 @@
   "Ident": "sotertrials",
   "Schema": 1,
   "IncludeSourceFiles": true,
-  "Resources": null,
+  "Resources": "\nfonts/BankGothic.ttf\nfonts/DSEG7Modern-Italic.ttf\nfonts/Ubuntu.ttf\nimages/crosshair.png\nmaps/sotertrialslvl1.los",
   "PackageReferences": [],
   "EditorReferences": null,
   "IsWhitelistDisabled": false,

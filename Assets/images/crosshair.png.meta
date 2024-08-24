@@ -1,0 +1,20 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Soter Trials crosshair",
+      "Type": "asset",
+      "Org": "sotergames",
+      "Ident": "crosshair",
+      "Schema": 0,
+      "IncludeSourceFiles": true,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "IsWhitelistDisabled": false,
+      "Metadata": {
+        "SingleAssetSource": "images/crosshair.png"
+      }
+    }
+  }
+}

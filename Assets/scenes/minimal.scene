@@ -283,7 +283,7 @@
       "Name": "Guy",
       "Position": "42.02312,-325.2114,0.09375",
       "Rotation": "0,0,0.8657407,0.5004929",
-      "Tags": "player,trigger",
+      "Tags": "player",
       "NetworkMode": 1,
       "Components": [
         {
@@ -296,7 +296,7 @@
           "IgnoreLayers": "",
           "Radius": 16,
           "StepHeight": 18,
-          "UseCollisionRules": false
+          "UseCollisionRules": true
         },
         {
           "__type": "Sandbox.SkinnedModelRenderer",
@@ -402,8 +402,8 @@
             "go": "ea123054-088b-4251-9b04-e6c49fa9004a",
             "component_type": "CharacterController"
           },
-          "CrouchMoveSpeed": 64,
-          "CrouchSprintMoveSpeed": 95,
+          "CrouchMoveSpeed": 95,
+          "CrouchSprintMoveSpeed": 120,
           "MaxSpeed": 320,
           "RunMoveSpeed": 190,
           "SprintMoveSpeed": 320,
@@ -427,6 +427,11 @@
           "Radius": 10,
           "Start": "0,0,0",
           "Static": false
+        },
+        {
+          "__type": "PlayerPusher",
+          "__guid": "89e6f4b1-6e01-4765-b84c-89eab50d8d12",
+          "Radius": 0
         }
       ],
       "Children": [
@@ -1538,42 +1543,6 @@
       ]
     },
     {
-      "__guid": "83880704-70c9-4b4a-b4a3-89fd51ab03a3",
-      "Flags": 0,
-      "Name": "TTD",
-      "Position": "2359.743,-1114.257,-550.9707",
-      "Scale": "161.1317,100.1236,1",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "c069dd6e-cbf2-462b-abd5-a842fac0feb4",
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,0"
-        },
-        {
-          "__type": "Sandbox.BoxCollider",
-          "__guid": "00906d68-8de2-44b3-8341-2d97baa4b574",
-          "Center": "0,0,0",
-          "IsTrigger": true,
-          "Scale": "161.132,100.124,50",
-          "Static": false
-        },
-        {
-          "__type": "TTD",
-          "__guid": "bd0fb905-1c3d-4590-8c17-cbd2afc8f06b",
-          "SpawnPoints": [
-            {
-              "_type": "gameobject",
-              "go": "70bf30e2-71ac-44e6-a0b3-dca9b6f81599"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "__guid": "70bf30e2-71ac-44e6-a0b3-dca9b6f81599",
       "Flags": 0,
       "Name": "Start",
@@ -1597,6 +1566,1439 @@
           "IsTrigger": true,
           "Scale": "2,2,2",
           "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "83880704-70c9-4b4a-b4a3-89fd51ab03a3",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "-750.2839,-85.31648,-5513.439",
+          "Scale": "61.83738,21.37122,13.03803",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "c069dd6e-cbf2-462b-abd5-a842fac0feb4",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "00906d68-8de2-44b3-8341-2d97baa4b574",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "61.837,44.371,13.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "bd0fb905-1c3d-4590-8c17-cbd2afc8f06b",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "70bf30e2-71ac-44e6-a0b3-dca9b6f81599"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "07fc388d-6ec9-4f39-84d8-cfd313eeb357",
+      "Flags": 0,
+      "Name": "CP1",
+      "Position": "1414.928,-0.9042206,33.96172",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "8519db73-0607-46fa-a3d9-59a960f2b12e",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "4fa21d5b-72f4-4f00-b2c0-13d0a8d5e2e9",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "bd2e93a0-882d-4f58-a53a-ffca94bb3b96",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "1297.724,-85.31648,-5513.439",
+          "Scale": "61.83738,21.37122,13.03803",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "f6f372c5-90d4-46d9-b8f2-a5893314bf15",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "c6c2a33b-0497-4b79-94ce-40a03909ad29",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "44.444,44.444,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "5db35c30-7cd8-47ff-8576-b625dd197881",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "07fc388d-6ec9-4f39-84d8-cfd313eeb357"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "207296fc-5234-48d3-b770-a611a4d0796a",
+      "Flags": 0,
+      "Name": "CP2",
+      "Position": "3282.244,-0.9042206,33.96172",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "68279d4d-b49a-49ab-a534-f081aa17d9ba",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "a039d6fb-4afd-458c-a8a7-0f9237a3ce9e",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "fc3776a4-d5b7-4438-b971-4866083d58f3",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "1317.069,-85.31673,-5513.439",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Scale": "61.83738,21.37122,13.03803",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "702e786a-b41c-47b1-a2d3-0280fec32966",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "696d40bd-ebec-49cb-8a50-eb521c4b61ce",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "92.444,90,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "c02128b6-baba-4046-8917-c25abba6b09a",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "207296fc-5234-48d3-b770-a611a4d0796a"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "59d5ec98-14bb-4f0d-9ed7-75b0a6e3908c",
+      "Flags": 0,
+      "Name": "CP3",
+      "Position": "3880.802,-2694.84,321.6937",
+      "Rotation": "0,0,1,-0.00000004371139",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "990bb303-eb77-40c3-b849-07456158f296",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "9b9f8095-c16f-491f-9212-92c9cef289e8",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "146b6d2f-be52-4fc9-b940-6c3f9f1470f1",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "1847.162,-171.245,-9264.898",
+          "Rotation": "0,0,-1,-0.00000004371139",
+          "Scale": "61.83738,21.37122,13.03803",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "696becc4-7c71-4ed2-a4d4-9d340afce349",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "b8841a08-0b5f-4aea-a95d-41d8d07f4ce1",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "64.444,90,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "1c3f5aef-9c95-41d4-8773-e36276265d51",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "59d5ec98-14bb-4f0d-9ed7-75b0a6e3908c"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "94596403-c579-4fc5-bda4-7a3e488a3b37",
+      "Flags": 0,
+      "Name": "CP4",
+      "Position": "950.0809,-2720.234,321.6937",
+      "Rotation": "0,0,1,-0.00000004371139",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "a4679667-aeb7-4ce1-a7b7-b513e398af88",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "fee313df-5b74-446f-ad46-f983d7296d5b",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "b9b9ad39-6174-427d-82b3-cd36022c6b63",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "144.2256,-4.89137,168.3911",
+          "Scale": "0.3961703,9.614186,10",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d5f075c7-ae25-4d3d-914b-e43bdb0dbb1a",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "2d0ba981-b8bf-4ed1-93cc-4b2260d55b75",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,50,4",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "2036bd98-1683-458d-abf6-b901e818a58e",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "94596403-c579-4fc5-bda4-7a3e488a3b37"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "c13d0241-5b36-45f5-b97d-34579068a75e",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "261.8824,-4.89138,168.3911",
+          "Scale": "0.3961703,9.614186,10",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "417f5be2-91b9-4c39-bfb5-867c0c319eee",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "66bd3392-80ae-4e04-bba6-307b75c73cdf",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,50,4",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "7af7dd10-530b-457a-ba90-d0000b1e082a",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "94596403-c579-4fc5-bda4-7a3e488a3b37"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "4d60a9f9-c0c9-4e0a-8349-65abda4d489f",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "375.8502,-4.89139,168.3911",
+          "Scale": "0.3961703,9.614186,10",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "15252d4d-839f-4c15-8250-e5b4c723a164",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "5904c2ee-3863-4590-acda-66aa19783738",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,50,4",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "ce8119bf-0b04-485e-8d2e-b80903bf9f50",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "94596403-c579-4fc5-bda4-7a3e488a3b37"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "678e49b0-de5d-4fbf-b545-351264bfad8b",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "494.6025,-4.891401,168.3911",
+          "Scale": "0.3961703,9.614186,10",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "c88928ed-5915-4221-8312-5af9dae6b14e",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "2248fb29-da74-4867-8c21-a6fcbf0e1ec9",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,50,4",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "6a43e13c-7bde-47e0-aa3a-b32acb2622f5",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "94596403-c579-4fc5-bda4-7a3e488a3b37"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "2fa73f66-d3b6-42e3-a804-86707202d2e9",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "606.2812,-4.89141,168.3911",
+          "Scale": "0.3961703,9.614186,10",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "135ef9ce-f64d-4582-95e8-dcb78bf16e0e",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "7c8f7fad-323b-4571-9e3f-9c8284551f52",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,50,4",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "3a354a52-6465-4354-8204-9074ee061603",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "94596403-c579-4fc5-bda4-7a3e488a3b37"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "07f2ebab-ca0c-4974-a6d1-c9e126980428",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "724.6117,-4.891421,168.3911",
+          "Scale": "0.3961703,9.614186,10",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ee681b20-b6fd-4492-826d-efb7a0b1eacd",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "df297189-4da5-4a18-974e-a3af13ca78e7",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,50,4",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "eaf02e71-264f-4f7a-b367-075c09bdb827",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "94596403-c579-4fc5-bda4-7a3e488a3b37"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "465de5ac-f087-409b-be44-8374f451e829",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "837.883,-4.891431,168.3911",
+          "Scale": "0.3961703,9.614186,10",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ddbd9871-2d6c-4635-95a2-f08799dd801d",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "dbfcc79f-fb5c-4e56-880b-771f777beb86",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,50,4",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "02889a2c-de36-4df5-8396-a6e565f4999a",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "94596403-c579-4fc5-bda4-7a3e488a3b37"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "e85e2153-632d-486f-ad65-fd8ec01b6f57",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "956.1965,-4.891441,168.3911",
+          "Scale": "0.3961703,9.614186,10",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "691981c7-7089-45a8-89b5-5e87ad7e5e4f",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "bf887a1e-1ee9-45e5-8f9b-27cb62183967",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,50,4",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "f858a96b-5611-4268-b982-d6f6455a978c",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "94596403-c579-4fc5-bda4-7a3e488a3b37"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "e046ee9c-93d2-42c4-b569-d93935f926c2",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "1078.901,-4.891452,168.3911",
+          "Scale": "0.3961703,9.614186,10",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "71701f6d-5350-4c0a-982a-4622b7e406f8",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "c2510410-3f60-4a08-927d-c619c1241d0e",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,50,4",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "14e93b6a-88c8-4b29-967d-48155450b7ef",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "94596403-c579-4fc5-bda4-7a3e488a3b37"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "99f2ae4c-a6c9-4a86-ac1f-d6a02f86fbec",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "1195.349,-4.891462,168.3911",
+          "Scale": "0.3961703,9.614186,10",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "3d84f539-d4ca-4679-a868-54e89248596d",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "c06d573c-975e-4e43-8cdd-d0efc652894f",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,50,4",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "90a8490d-7a1c-44e5-9620-6b1a1a5429de",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "94596403-c579-4fc5-bda4-7a3e488a3b37"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "fc3ad7c8-51dc-4b97-974f-8d381ed66a5e",
+      "Flags": 0,
+      "Name": "CP5",
+      "Position": "-304.9471,-2720.234,321.6937",
+      "Rotation": "0,0,1,-0.00000004371139",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "a98702a3-e0f0-461e-ba97-0e8daf2241df",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "33977a8e-fb7c-46f1-af5c-24e818a80b37",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "1193d068-bc73-494c-a765-7955662d5eb1",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "1690.43,-577.882,-9264.898",
+          "Rotation": "0,0,-1,-0.00000004371139",
+          "Scale": "61.83738,21.37122,13.03803",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "16579f29-000d-401d-902a-ce9f08eb1155",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "c3be1c56-4e7f-4253-b691-2d9f797400a0",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "64.444,90,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "2d2aac20-0487-4412-84a4-c6b13d473e19",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "fc3ad7c8-51dc-4b97-974f-8d381ed66a5e"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "a570772e-91b8-4342-b328-ecfc211b78cb",
+      "Flags": 0,
+      "Name": "CP6",
+      "Position": "-1394.568,-1296.59,608.6198",
+      "Rotation": "0,0,0.7071068,0.7071068",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "1d7e34f7-0523-4a83-886b-22548bdd8da8",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "4caac3bb-316f-498b-aeba-df0c87e6c8df",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "6976906a-972d-40cd-8f48-06732bc8f5a9",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "446.7243,-24.60996,-3221.762",
+          "Rotation": "0,0,-0.7071068,0.7071068",
+          "Scale": "20.837,10,12",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "a56aa6d6-9330-43f3-96eb-c818c88c8429",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "eb6b0ebb-09ca-4f27-a69e-1eb13b287ea3",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "34,64,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "1a0b8ac4-6416-49c9-82d3-645106240859",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "a570772e-91b8-4342-b328-ecfc211b78cb"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "1f8e15e2-a266-4ea6-9bad-ba36c827040e",
+      "Flags": 0,
+      "Name": "CP7",
+      "Position": "-1394.568,-556.1361,608.6198",
+      "Rotation": "0,0,0.7071068,0.7071068",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "e7cf7bdf-964b-4f91-8690-3fac5bfea441",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "fb18ab1d-786b-4e44-86f9-f6f45e6ee14a",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "4b5bb21a-a312-4981-9a0e-7fbd960fdc13",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "669.6929,2.415323,-2371.469",
+          "Rotation": "0,0,-0.7071068,0.7071068",
+          "Scale": "20.837,10,12",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "eb7f4b28-7735-4afb-bbd4-a9a3c244487b",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "1344d677-b49d-4dfc-868d-bf33b6b46957",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "64,128,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "fea4c13f-4776-4126-8db3-c9a61823db92",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "1f8e15e2-a266-4ea6-9bad-ba36c827040e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "ef1e97bb-7ef1-4372-a2d7-ac9a57771a30",
+          "Flags": 0,
+          "Name": "the",
+          "Position": "301.2172,-14.62632,0",
+          "Scale": "2,2,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "777f6d63-74b1-4fdf-b430-82af2617bf25",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "c9388c45-96ed-4679-8b6a-07b9b0e9a734",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "44,44,20",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "63d4fe0e-ef86-4438-84fe-625a3474984b",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "1f8e15e2-a266-4ea6-9bad-ba36c827040e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "75fed2cc-f147-4582-b916-fa4306891bc8",
+          "Flags": 0,
+          "Name": "the",
+          "Position": "301.2169,255.6669,0",
+          "Scale": "2,2,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "c063def0-d450-4537-bc1b-c4998072796f",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "c1eec8fe-d18a-4b52-9d25-12aa8ec800e6",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "44,44,20",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "4bb9f8b7-262a-44df-9d53-6c8587877211",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "1f8e15e2-a266-4ea6-9bad-ba36c827040e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "336e9565-8a11-4185-9cb4-40a7230134d2",
+          "Flags": 0,
+          "Name": "the",
+          "Position": "657.6674,255.6673,0",
+          "Scale": "2,2,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "78bdf861-3baf-4780-91c3-59b8b8e26ba4",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "f3b41119-9b5a-4c78-9244-95f816d67ffe",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "44,44,20",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "936ce6d2-30d5-413c-9f4d-2ab51979d26f",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "1f8e15e2-a266-4ea6-9bad-ba36c827040e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "ca112aae-aed1-4002-bf77-a23ab6a1b63b",
+          "Flags": 0,
+          "Name": "the",
+          "Position": "657.6673,-196.2238,0",
+          "Scale": "2,2,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "70ccedf1-ead8-4920-b958-4d4b74c81098",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "57e2f38e-3f73-4752-9a04-f5efc9c2e576",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "44,44,20",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "b3e59a26-7a38-4892-ab16-218b56f92758",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "1f8e15e2-a266-4ea6-9bad-ba36c827040e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "a5186992-3c23-4726-902d-2cd7f72145af",
+          "Flags": 0,
+          "Name": "the",
+          "Position": "924.4903,-196.2236,0",
+          "Scale": "2,2,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "0b65db88-fe14-4abf-bbfc-cde8c04e5e74",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "0260d1b6-ea5c-43ef-a20a-73532a114651",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "44,44,20",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "af49c716-f5dd-4c13-8479-2e87edb78a08",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "1f8e15e2-a266-4ea6-9bad-ba36c827040e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "3013749c-c176-4da0-807f-eef2feffee35",
+          "Flags": 0,
+          "Name": "the",
+          "Position": "924.4905,-548.0913,0",
+          "Scale": "2,2,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "b6304fcd-a19d-47df-9dbe-ec7fbad72b4e",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0,0,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "fd73026b-c3cd-4cd3-b671-f0ea47aefd95",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "44,44,20",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "8861977a-aaca-4c32-a56a-a85a5bfdfde3",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "1f8e15e2-a266-4ea6-9bad-ba36c827040e"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "6159c24d-cc8d-41bd-baa5-78125a9b199b",
+      "Flags": 0,
+      "Name": "CP8",
+      "Position": "-734.066,102.8358,608.6198",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "5990f6bb-98b5-4a9c-a9e3-aa04099cb12a",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "965b7044-6fc6-472c-852c-ab66123c4060",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "783afe4f-0c59-4fb3-993f-a50096a7a826",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "482.9503,10.72145,-2371.469",
+          "Scale": "20.837,10,12",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "8911bfaf-02cf-45d0-bc98-cd8e91cb72af",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "dda81431-3146-4692-a294-1efb805a7acc",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,128,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "d7ad6121-6823-4b1d-9b95-152793182924",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "6159c24d-cc8d-41bd-baa5-78125a9b199b"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "4677d9dc-3ba5-4b21-b18c-f016411897e0",
+      "Flags": 0,
+      "Name": "CP9",
+      "Position": "66.78851,102.8358,608.6198",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "7ffd6d00-96a7-4c93-a315-5853ba5703b3",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "d7909e41-30d1-4a3a-a700-14838725a741",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "303f0717-175d-4687-822c-a479c8273276",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "745.776,10.72145,-2371.469",
+          "Scale": "20.837,10,12",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "e6d3a037-47ae-4901-adb5-464ab8e0e793",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "096d3fc5-3e9b-4987-b052-a734f649d66d",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "64,64,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "cf53116d-57d0-44c5-b8d6-2b5812709804",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "4677d9dc-3ba5-4b21-b18c-f016411897e0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "f1919ce1-a626-4c51-b17f-bb6be6e05643",
+      "Flags": 0,
+      "Name": "CP10",
+      "Position": "1491.096,102.8358,608.6198",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "84b7da55-3678-43dc-8d1b-0edb7070d928",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "bd1f456e-a9c7-446f-9290-a0963f6344bb",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "6319914f-a049-4f8e-9506-140c2d6ad377",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "750.2156,10.72145,-2371.469",
+          "Scale": "20.837,10,12",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "facb2ae7-a353-4415-ae96-353602baa70a",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "b2adb880-cad8-4392-87b1-8d9c246036bd",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "70,128,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "7f044b73-1593-427f-897b-10bc92105177",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "f1919ce1-a626-4c51-b17f-bb6be6e05643"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "3cf221e0-7771-43c7-9275-5a4b5d461464",
+      "Flags": 0,
+      "Name": "CP11",
+      "Position": "3071.753,102.8358,608.6198",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "a1b9268a-80aa-419e-ab22-a8794d95596d",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "fb17d441-ba9b-4d89-b124-9fcb41600f0d",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "3ce1e17e-067c-45a9-9030-bbc6e364d9b3",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "383.5715,10.72145,-883.7501",
+          "Scale": "20.837,10,12",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "725bec9b-6389-4630-95eb-f0cca29058c2",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "cfd5f70c-fcbf-47a5-9052-03f0589e76cf",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "48,64,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "e1750725-4167-4e42-aae0-10c40370be83",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "3cf221e0-7771-43c7-9275-5a4b5d461464"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "3424e48b-2c0e-4eee-8164-7f31838d5a2a",
+      "Flags": 0,
+      "Name": "CP12",
+      "Position": "3854.338,102.8358,608.6198",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "0baa99cd-99d0-4707-b827-55c47b1b80ee",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "7e0771e2-aa86-4bb0-9ff4-4ee71e3bbfa1",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "8b78bc65-e5c8-4a37-a843-769915d812d9",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "314.2666,10.72145,-883.7501",
+          "Scale": "20.837,10,12",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "b642fbbd-bfa3-4e63-9de7-9ecb13aafe2c",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "8f9f450f-cbb8-4135-9190-c0aa614fdc73",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "24,64,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "fbf20620-cd4b-4eb9-be40-a23b409607b8",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "3424e48b-2c0e-4eee-8164-7f31838d5a2a"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "d32fbcdf-7a46-41db-80e7-b69d2fea47b0",
+      "Flags": 0,
+      "Name": "CP13",
+      "Position": "4336.192,102.8358,912.303",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "f743bf78-2f83-455d-8066-64d1ef95cd20",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "7602c1ea-4ee5-4a10-a679-f6441e44b196",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "cdf59a40-bae4-4faa-9b56-8a740cdc7592",
+          "Flags": 0,
+          "Name": "TTD",
+          "Position": "484.0703,-1215.294,-1439.013",
+          "Scale": "20.837,10,12",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "59f9e610-b455-4603-accd-e315ab0f2e91",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,0"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "e9fc1ae7-0727-46be-a582-1b11ba6dfd57",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "40,320,20.038",
+              "Static": false
+            },
+            {
+              "__type": "TTD",
+              "__guid": "e2fb2eb5-5522-492f-9ba6-99ca1cb88c5c",
+              "SpawnPoints": [
+                {
+                  "_type": "gameobject",
+                  "go": "d32fbcdf-7a46-41db-80e7-b69d2fea47b0"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
