@@ -1493,7 +1493,7 @@
         },
         {
           "__type": "Scoreboard",
-          "__guid": "f3953d80-282f-4e36-8c4f-b5ed8c1dfe77"
+          "__guid": "0937a486-08c8-492b-b59a-09621acb2bd8"
         }
       ]
     },
@@ -1537,8 +1537,13 @@
         },
         {
           "__type": "HUD",
-          "__guid": "ee1c526d-bd99-4911-adbe-3679e470d71a",
-          "MyStringValue": "Hello World!"
+          "__guid": "b736d805-d0e3-468b-8f3b-72d11ed5d781",
+          "LevelTime": {
+            "_type": "component",
+            "component_id": "fd7ffe78-2537-48c1-84bf-75705efa1f6b",
+            "go": "70bf30e2-71ac-44e6-a0b3-dca9b6f81599",
+            "component_type": "LevelTime"
+          }
         }
       ]
     },
@@ -1562,10 +1567,32 @@
         {
           "__type": "Sandbox.BoxCollider",
           "__guid": "b2e0f985-3f68-4dbd-980d-7fdd80d59680",
-          "Center": "0,0,0",
+          "Center": "0,0,500",
           "IsTrigger": true,
-          "Scale": "2,2,2",
+          "Scale": "100,500,1000",
           "Static": false
+        },
+        {
+          "__type": "LevelTime",
+          "__guid": "fd7ffe78-2537-48c1-84bf-75705efa1f6b",
+          "FinishLine": {
+            "_type": "component",
+            "component_id": "8793585e-a0ef-4d6b-9452-6d0e26dadd90",
+            "go": "36787e6f-e10b-443d-872f-76f922af7d5c",
+            "component_type": "BoxCollider"
+          },
+          "Player": {
+            "_type": "component",
+            "component_id": "b5d11bdd-268e-4b14-8590-7ec62c30294b",
+            "go": "ea123054-088b-4251-9b04-e6c49fa9004a",
+            "component_type": "PlayerController"
+          },
+          "StartLine": {
+            "_type": "component",
+            "component_id": "b2e0f985-3f68-4dbd-980d-7fdd80d59680",
+            "go": "70bf30e2-71ac-44e6-a0b3-dca9b6f81599",
+            "component_type": "BoxCollider"
+          }
         }
       ],
       "Children": [
@@ -1573,7 +1600,7 @@
           "__guid": "83880704-70c9-4b4a-b4a3-89fd51ab03a3",
           "Flags": 0,
           "Name": "TTD",
-          "Position": "-750.2839,-85.31648,-5513.439",
+          "Position": "-974.5348,-85.31648,-5513.439",
           "Scale": "61.83738,21.37122,13.03803",
           "Enabled": true,
           "Components": [
@@ -1608,6 +1635,33 @@
       ]
     },
     {
+      "__guid": "3b4035ac-e70f-44f9-a30f-216ea44cbacb",
+      "Flags": 0,
+      "Name": "TP",
+      "Position": "-325.2572,-0.9042206,33.96172",
+      "Scale": "1,1,0.07669869",
+      "Tags": "trigger",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "eb6e694e-140e-4a34-9898-cb9af5091d7d",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "daf7dfd2-7f32-4cd2-84d9-d7d96b1f07ef",
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "2,2,2",
+          "Static": false
+        }
+      ]
+    },
+    {
       "__guid": "07fc388d-6ec9-4f39-84d8-cfd313eeb357",
       "Flags": 0,
       "Name": "CP1",
@@ -1619,6 +1673,7 @@
         {
           "__type": "Sandbox.ModelRenderer",
           "__guid": "8519db73-0607-46fa-a3d9-59a960f2b12e",
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "Model": "models/dev/box.vmdl",
           "RenderType": "On",
@@ -1703,7 +1758,7 @@
           "__guid": "fc3776a4-d5b7-4438-b971-4866083d58f3",
           "Flags": 0,
           "Name": "TTD",
-          "Position": "1317.069,-85.31673,-5513.439",
+          "Position": "1843.267,-85.3166,-5513.439",
           "Rotation": "0,0,-0.7071067,0.7071068",
           "Scale": "61.83738,21.37122,13.03803",
           "Enabled": true,
@@ -2294,7 +2349,7 @@
           "__guid": "6976906a-972d-40cd-8f48-06732bc8f5a9",
           "Flags": 0,
           "Name": "TTD",
-          "Position": "446.7243,-24.60996,-3221.762",
+          "Position": "446.7243,-24.60752,-3221.762",
           "Rotation": "0,0,-0.7071068,0.7071068",
           "Scale": "20.837,10,12",
           "Enabled": true,
@@ -2361,7 +2416,7 @@
           "__guid": "4b5bb21a-a312-4981-9a0e-7fbd960fdc13",
           "Flags": 0,
           "Name": "TTD",
-          "Position": "669.6929,2.415323,-2371.469",
+          "Position": "669.6929,2.417764,-2371.469",
           "Rotation": "0,0,-0.7071068,0.7071068",
           "Scale": "20.837,10,12",
           "Enabled": true,
@@ -2506,7 +2561,7 @@
           "__guid": "ca112aae-aed1-4002-bf77-a23ab6a1b63b",
           "Flags": 0,
           "Name": "the",
-          "Position": "657.6673,-196.2238,0",
+          "Position": "657.6673,-196.2233,0",
           "Scale": "2,2,1",
           "Enabled": true,
           "Components": [
@@ -2542,7 +2597,7 @@
           "__guid": "a5186992-3c23-4726-902d-2cd7f72145af",
           "Flags": 0,
           "Name": "the",
-          "Position": "924.4903,-196.2236,0",
+          "Position": "924.4906,-196.2228,0",
           "Scale": "2,2,1",
           "Enabled": true,
           "Components": [
@@ -2578,7 +2633,7 @@
           "__guid": "3013749c-c176-4da0-807f-eef2feffee35",
           "Flags": 0,
           "Name": "the",
-          "Position": "924.4905,-548.0913,0",
+          "Position": "924.4941,-548.0876,0",
           "Scale": "2,2,1",
           "Enabled": true,
           "Components": [
@@ -2708,7 +2763,7 @@
           "__guid": "303f0717-175d-4687-822c-a479c8273276",
           "Flags": 0,
           "Name": "TTD",
-          "Position": "745.776,10.72145,-2371.469",
+          "Position": "745.776,10.72145,-1545.44",
           "Scale": "20.837,10,12",
           "Enabled": true,
           "Components": [
@@ -2838,7 +2893,7 @@
           "__guid": "3ce1e17e-067c-45a9-9030-bbc6e364d9b3",
           "Flags": 0,
           "Name": "TTD",
-          "Position": "383.5715,10.72145,-883.7501",
+          "Position": "383.5715,10.72145,-985.9574",
           "Scale": "20.837,10,12",
           "Enabled": true,
           "Components": [
@@ -2903,7 +2958,7 @@
           "__guid": "8b78bc65-e5c8-4a37-a843-769915d812d9",
           "Flags": 0,
           "Name": "TTD",
-          "Position": "314.2666,10.72145,-883.7501",
+          "Position": "314.2666,10.72145,-774.2183",
           "Scale": "20.837,10,12",
           "Enabled": true,
           "Components": [
@@ -2920,7 +2975,7 @@
               "__guid": "8f9f450f-cbb8-4135-9190-c0aa614fdc73",
               "Center": "0,0,0",
               "IsTrigger": true,
-              "Scale": "24,64,20.038",
+              "Scale": "24,64,1",
               "Static": false
             },
             {
@@ -3021,10 +3076,73 @@
         {
           "__type": "Sandbox.BoxCollider",
           "__guid": "8793585e-a0ef-4d6b-9452-6d0e26dadd90",
+          "Center": "0,0,500",
+          "IsTrigger": true,
+          "Scale": "100,100,1000",
+          "Static": true
+        }
+      ]
+    },
+    {
+      "__guid": "12800d37-e25d-4338-bedd-6b66941d02ce",
+      "Flags": 0,
+      "Name": "Back to Start",
+      "Position": "2866.081,-2664.746,911.9537",
+      "Scale": "1,1,0.07669869",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "81d41633-b188-43b5-bcdb-127fb7cf0e87",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.05116,0.05116,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "1bea0968-0b4b-4e81-a936-ccf34723980e",
           "Center": "0,0,0",
           "IsTrigger": true,
-          "Scale": "1,1,0.077",
+          "Scale": "4,4,4",
           "Static": true
+        },
+        {
+          "__type": "TTD",
+          "__guid": "560ffb2d-3ad3-4fc7-8068-263d8c304508",
+          "collider": {
+            "_type": "component",
+            "component_id": "1bea0968-0b4b-4e81-a936-ccf34723980e",
+            "go": "12800d37-e25d-4338-bedd-6b66941d02ce",
+            "component_type": "BoxCollider"
+          },
+          "SpawnPoints": [
+            {
+              "_type": "gameobject",
+              "go": "3b4035ac-e70f-44f9-a30f-216ea44cbacb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "e2aac2e3-5387-43ad-b37b-dc91f0622d50",
+      "Flags": 0,
+      "Name": "Text",
+      "Position": "2806.428,-2652.539,960.2155",
+      "Rotation": "0,0,1,0.0000001947072",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.TextRenderer",
+          "__guid": "aa6a583b-2d7a-4bf7-89a6-6a09e5f9e1d5",
+          "Color": "0.45103,0.47149,0.5297,1",
+          "FontFamily": "Ubuntu",
+          "FontSize": 80,
+          "FontWeight": 800,
+          "Scale": 0.3,
+          "Text": "Good job, Max Verstappen!\nUse this pad to teleport back to the start!",
+          "TextAlignment": "Center"
         }
       ]
     }
